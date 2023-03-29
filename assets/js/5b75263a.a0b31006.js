@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrai_workshop=self.webpackChunkrai_workshop||[]).push([[668],{5341:a=>{a.exports=JSON.parse('{"allTagsPath":"/1hr-rai-dashboard-workshop/blog/tags","slug":"/1hr-rai-dashboard-workshop/blog/tags/facebook","name":"facebook","count":1,"permalink":"/1hr-rai-dashboard-workshop/blog/tags/facebook"}')}}]);

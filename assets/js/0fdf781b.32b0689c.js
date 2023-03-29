@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrai_workshop=self.webpackChunkrai_workshop||[]).push([[796],{5032:o=>{o.exports=JSON.parse('{"permalink":"/1hr-rai-dashboard-workshop/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
