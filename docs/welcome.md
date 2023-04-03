@@ -18,7 +18,7 @@ The dataset also contains an indicator of whether diabetic patients that were di
 * Helpful for decision-makers and stakeholders to be able to understand and make well informed decisions based on the model's outcomes and behavior
 
 ## Duration
-Let's uncover the benefits of using Azure Machine Learning's **Responsible AI dashboard in 2 hour**.
+Let's uncover the benefits of using Azure Machine Learning's **Responsible AI dashboard in 1 hour**.
 
 ## Tip
 To preserve your Azure credits, be sure to [shutdown your compute](/docs/stop-compute) instance at the end of the workshop.

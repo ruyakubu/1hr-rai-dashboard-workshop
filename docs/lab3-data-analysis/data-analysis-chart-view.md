@@ -7,7 +7,7 @@ slug: /data-analysis-chart-view
 
 The chart view of the dashboard is another useful tool to visualize the data representation. You will be using the chart to compare the data distribution for the patients data.
 
-*Check data imbalance issues*
+*Check data imbalance issues in dataset*
 
 1. Under the "Chart view" pane, use the cohort with all the test data by selecting the "All data" option from the **"Select a dataset cohort to explore"** drop-down menu.
 2. On the Y-axis,  click on the current selected *"race"* button, which will launch a pop-up menu. Under **"Select your axis value"**, choose "Count".
@@ -67,9 +67,5 @@ Since *Prior_Inpatient* is one of the features from the cohort will the highest 
 
 ![Data Analysis race predictionY](/img/tutorial/7-da-race-predictY.png "Data Analysis race predictionY")	
 
-6. For *"Race"*, the chart shows that due to the data imbalance, the model will not be able to predict if a patient will be Readmitted back to the hospital for some ethnicities. As you saw above the "Caucasian" patients are overrepresented in this data set. So, even when there was no prediction for the other ethnic groups, we see 31 "Readmitted" occurrences for Caucasian patients since there's an overrepresentation there.
-7. Click on the y-axis label. In the pop-up window pane, select the "Dataset" radio button. Then under "select feature", select *"age"* on the drop-down menu. 
-	
-![Data Analysis age predictionY](/img/tutorial/7-da-age-predictY.png "Data Analysis age predictionY")
-	
-8. You'll see that the model prediction is affected by the patients' age groups as well. There's an overrepresentation of data for patients *"Over 60 years"* and data underrepresentation for patients *"30 years or younger"*. Here, the effects of data imbalance were evident between the model's classification of "Not readmitted" vs "Readmitted".
+6. For *"Race"*, the chart shows that due to the data imbalance, the model will not be able to predict if a patient will be Readmitted back to the hospital for some ethnicities. As you saw above the "Caucasian" patients are overrepresented in this data set. So, even when there was no prediction for the other ethnic groups, we see 31 "Readmitted" occurrences for caucasian patients since there's an overrepresentation there.
+

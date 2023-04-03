@@ -6,7 +6,7 @@ slug: /analyze-dataset-cohort
 
 # Model Overview
 
-Part of evaluating the performance of a machine learning model is getting a wholistic understanding of its behavior.  This sometimes involves doing comparative analysis helps shed light on how the model is performing with one subgroup of the dataset vs another.   In some case feature-based analysis is necessary to isolate the data and pinpoint the root cause of some of the errors.
+Part of evaluating the performance of a machine learning model is getting a holistic understanding of its behavior.  This sometimes involves doing comparative analysis to help shed light on how the model is performing with one subgroup of the dataset vs another.   
 
 In this lab we will explore how to use the Model Overview section of the Azure Responsible AI (RAI) dashboard. We will use the cohorts created from the Error Analysis lab to investigate why the model’s behavior is better in one cohort vs another cohort.
 
@@ -20,10 +20,10 @@ In the previous lab, you used the Error Analysis tool of the RAI dashboard to di
 1. Under Model Overview, select the “Dataset Cohorts” pane. This displays the different cohorts created in a table with the model metrics.
 2. Compare the cohort with the most errors **“Err: Prior_Inpatient > 0; Num_Meds > 11 and ≤ 21.50”** verse the least errors **“Prior_inpatient = 0; num_diagnose ≤ 6.50; lab_procedures < 56.50”**
 3. Hover the mouse over the box plot line on the chart to see the measurement details.
-4. Observe that the accuracy score for the erroneous cohort is 0.66, which is bad. The False Positive rate is very low; meaning the model is not performing well predicting patients that are going to be Readmitted back to the hospital in 30 days. 
+4. Observe that the accuracy score for the erroneous cohort is 0.657, which is bad. The false positive rate is very low; meaning the model is incorrectly predicting that patients are not going to be readmitted when in actuality the patients will be readmitted back to the hospital in 30 days. 
 
-	Contrarily, the False Negative rate of 0.754 is high. Meaning, a majority of patients that the model is predicting has a high rate of predicting patients that will not be readmitted as readmitted in 30 days back to the hospital.
-5. Next, look at the metrics for the cohort with the least errors has an accuracy score of 0.94, which is far better than the overall accuracy score of the model with all the data. However, this cohort also has a low  False positive rate at 0.
+	On the contrary, the false negative rate of 0.754 is high. Meaning, a majority of patients that the model is predicting have a high error rate of predicting patients that will not being readmitted as readmitted within 30 days back to the hospital.
+5. Next, the metrics for the cohort with the least errors have an accuracy score of 0.94, which is far better than the overall accuracy score of the model with all the data. However, this cohort also has a low  false positive rate at 0.
 
 ## Examine the Probability distribution chart 
 
@@ -35,7 +35,7 @@ The Probability distribution chart shows the model’s probability predicting if
 1. Compare the probability of the patients not being readmitted for all 3 cohorts.
 2. You'll see that the “All data” cohort with all the patients test dataset, show that a majority of the patients will not be readmitted back in the hospital within 30 days, with a median probability of patients not readmitted at 0.854 and upper quartile at 0.986, which is good. We would not want a high frequency of patients being readmitted back to a hospital in a few days after being discharged.
 3. Next, the cohort with the highest error rate:  ***Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50***, shows a slightly lower probability at 0.89 and a median of 0.719. 
-4. Lastly, the cohort with the least error rate: ***Prior_Inpatient = 0*; *num_diagnoses <= 6.50***; *lab_procedures <= 56.50*,  show a probability of patients not readmitted has a median of 0.90 and upper quartile of 0.986. 
+4. Lastly, the cohort with the least error rate: ***Prior_Inpatient = 0; num_diagnoses <= 6.50; lab_procedures <= 56.50***,  show a probability of patients not readmitted has a median of 0.90 and upper quartile of 0.986. 
 5. To change the chart to show the probability of patients being Readmitted for the 3 cohorts, click on the "Choose Label" button on the x-axis.
 
 ![dataset y-axis readmitted](/img/tutorial/4-dataset-y-reamitted.png "Dataset cohort Y-axis Readmitted")
@@ -67,7 +67,7 @@ Now let's get a deeper understanding of the model's performance by switching to 
 
 ## Look at the Confusion Matrix 
 
-The Confusion Matrix is helpful to check the rate of the model correctly making the right prediction. This will reveal how well the model is learning for cases where the patient is Readmitted back in the hospital within 30 days vs Not Readmitted.
+The Confusion Matrix is helpful to check the rate of the model correctly making the right prediction. This will reveal how well the model is learning for cases where the patient is readmitted back in the hospital within 30 days vs not readmitted.
 
 1. Click on the "Confusion matrix" tab.
 
