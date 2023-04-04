@@ -6,11 +6,11 @@ sidebar_position: 2
 
 ## Azure subscription account
 
-In order to successfully complete this workshop you'll need Azure credits.  The instructor will provide you with your account access code.  You'll need to successfully complete the azure pass redemption process for setting up your account before you can start the steps below.
+In order to successfully complete this workshop you'll need Azure credits.  The instructor will provide you with your account access code.  You'll need to complete the azure pass redemption process for setting up your account before you can start the steps below.
 
 ## Setup your cloud resources
 
-We'll be using Azure Cloud Shell to create your Azure Machine Learning workspace; as well as running the jobs to train and register your model. And finally, create the Responsible AI dashboard that you'll be using in this workshop.  
+We'll be using Azure Cloud Shell to create your Azure Machine Learning workspace; as well as run the jobs to train and register your model. And finally, create the Responsible AI dashboard that you'll be using in this workshop.  
 
 1. To start, log into the [Azure portal](http://portal.azure.com/) with your account subscription.
 
